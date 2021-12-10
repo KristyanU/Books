@@ -1,0 +1,38 @@
+﻿@using UserManager.Entities;
+@{
+    
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<a href="/User/Edit"> + ADD NEW User</a>
+<td>
+    
+    <h3> My Users </h3>
+    <table style="width:100%;margin:50px;">
+        <tr style="font-weight:bold;">
+            <td> Username </td>
+
+            <td> First Name </td>
+
+            <td> Last Name </td>
+
+            <td> Options </td>
+
+        </tr>
+
+        @foreach (User item in (List<User>)ViewData["items"])
+        {
+            <tr>
+                <td>@item.Username </td>
+
+                <td>@item.FirstName </td>
+                <td>@item.LastName </td>
+                <td>
+                    <a href="/User/Edit?id=@item.Id" style="margin:0 10px"> Edit </a>
+                    <a href="/User/Delete?id=@item.Id" style="margin:0 10px"> Delete </a>
+                </td>
+            </tr>
+        }
+
+    </table>
+</td>
+

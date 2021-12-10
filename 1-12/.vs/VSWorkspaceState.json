@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\UserManager",
+    "\\UserManager\\Repositories",
+    "\\UserManager\\Views",
+    "\\UserManager\\Views\\Home"
+  ],
+  "SelectedNode": "\\UserManager\\Views\\_ViewStart.cshtml",
+  "PreviewInSolutionExplorer": false
+}
